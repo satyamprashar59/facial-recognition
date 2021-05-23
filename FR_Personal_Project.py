@@ -14,6 +14,8 @@ Ansh_image = face_recognition.load_image_file('male.jpeg') # similar principle a
 male_encoding = face_recognition.face_encodings(Ansh_image) [0]
 rekha_image = face_recognition.load_image_file('rekha.jpeg')
 rekha_encoding = face_recognition.face_encodings(rekha_image) [0]
+satyam_image = face_recognition.load_image_file('satyam.jpeg')
+satyam_encoding = face_recognition.face_encodings(satyam_image) [0]
 
 
 # researc hhow to add more pictures
@@ -25,14 +27,15 @@ rekha_encoding = face_recognition.face_encodings(rekha_image) [0]
 known_face_encodings = [
     female_encoding,
     male_encoding,
-    rekha_encoding
-
+    rekha_encoding,
+    satyam_encoding
 ]
 
 known_face_names = [
     "Vanshi",
     "Ansh",
     "Rekha",
+    "satyam",
 ]
 # voice control thing
 # declaring the initial variables
